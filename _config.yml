@@ -1,0 +1,28 @@
+# Site settings
+title: Kondra Chemical
+description: Your trusted partner for quality chemistry hardware and laboratory equipment
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  products:
+    output: true
+    permalink: /products/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
