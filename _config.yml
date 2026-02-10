@@ -1,8 +1,11 @@
 # Site settings
 title: Kondra Chemical
 description: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
-baseurl: ""
-url: ""
+
+# URL settings (for GitHub Pages project site)
+# Live site will be served from: https://kondrachemical.github.io/kondra-website
+url: "https://kondrachemical.github.io"  # no trailing slash
+baseurl: "/kondra-website"               # repo name with leading slash
 
 # Build settings
 markdown: kramdown
