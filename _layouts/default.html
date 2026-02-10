@@ -9,19 +9,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/small.png' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav-container">
       <a href="{{ '/' | relative_url }}" class="logo">
-        <span class="logo-icon">⚗️</span>
-        <span class="logo-text">Kondra Chemical</span>
+        <img src="{{ '/assets/images/large.png' | relative_url }}" alt="Kondra Chemical" class="logo-wide">
+        <img src="{{ '/assets/images/small.png' | relative_url }}" alt="Kondra" class="logo-square">
       </a>
       <ul class="nav-links">
-        <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-        <li><a href="{{ '/products/' | relative_url }}" {% if page.url contains '/products' %}class="active"{% endif %}>Products</a></li>
-        <li><a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}" {% if page.url == '/contact/' %}class="active"{% endif %}>Contact</a></li>
+        <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Lorem</a></li>
+        <li><a href="{{ '/products/' | relative_url }}" {% if page.url contains '/products' %}class="active"{% endif %}>Ipsum</a></li>
+        <li><a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>Dolor</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}" {% if page.url == '/contact/' %}class="active"{% endif %}>Sit</a></li>
       </ul>
       <button class="mobile-menu-toggle" aria-label="Toggle menu">
         <span></span>
@@ -38,22 +39,21 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-brand">
-        <span class="logo-icon">⚗️</span>
-        <span class="logo-text">Kondra Chemical</span>
-        <p>Quality chemistry hardware for laboratories and industry.</p>
+        <img src="{{ '/assets/images/large.png' | relative_url }}" alt="Kondra Chemical" class="footer-logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
       </div>
       <div class="footer-links">
-        <h4>Quick Links</h4>
+        <h4>Lorem Ipsum</h4>
         <ul>
-          <li><a href="{{ '/products/' | relative_url }}">Products</a></li>
-          <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
-          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          <li><a href="{{ '/products/' | relative_url }}">Dolor Sit</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">Amet Consectetur</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Adipiscing</a></li>
         </ul>
       </div>
       <div class="footer-contact">
-        <h4>Contact Us</h4>
-        <p>123 Laboratory Lane<br>Science City, SC 12345</p>
-        <p>info@kondrachemical.com</p>
+        <h4>Lorem Ipsum</h4>
+        <p>123 Lorem Ipsum<br>Dolor Sit, AM 12345</p>
+        <p>lorem@ipsum.com</p>
         <p>(555) 123-4567</p>
       </div>
     </div>

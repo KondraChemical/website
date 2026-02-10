@@ -92,18 +92,25 @@ p {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--primary);
 }
 
-.logo:hover {
-  color: var(--primary-dark);
+.logo img {
+  height: 65px;
+  width: auto;
 }
 
-.logo-icon {
-  font-size: 1.5rem;
+.logo-wide {
+  display: block;
+}
+
+.logo-square {
+  display: none;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: 0.5rem;
 }
 
 .nav-links {
@@ -444,11 +451,6 @@ p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-brand .logo-text {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
 .footer-brand p {
   color: rgba(255, 255, 255, 0.7);
   margin-top: 1rem;
@@ -531,6 +533,18 @@ p {
   
   .mobile-menu-toggle {
     display: flex;
+  }
+  
+  .logo-wide {
+    display: none;
+  }
+  
+  .logo-square {
+    display: block;
+  }
+  
+  .logo img {
+    height: 50px;
   }
   
   .mobile-menu-toggle.active span:nth-child(1) {
